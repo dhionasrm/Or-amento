@@ -39,13 +39,14 @@ namespace Orçamento
             this.lblCliente = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.lblData = new System.Windows.Forms.Label();
             this.imprimirButton = new System.Windows.Forms.Button();
             this.printDocument = new System.Drawing.Printing.PrintDocument();
+            this.txtDesc = new System.Windows.Forms.TextBox();
+            this.lblDesc = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // TituloEmpresa
@@ -145,16 +146,6 @@ namespace Orçamento
             this.label10.TabIndex = 10;
             this.label10.Text = "Assinatura Aprovação Cliente";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(16, 281);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(572, 234);
-            this.groupBox1.TabIndex = 11;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Descrição de Orçamento:";
-            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(74, 213);
@@ -197,21 +188,40 @@ namespace Orçamento
             this.imprimirButton.UseVisualStyleBackColor = true;
             this.imprimirButton.Click += new System.EventHandler(this.imprimirButton_Click);
             // 
-            // printDocument1
+            // printDocument
             // 
             this.printDocument.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument_PrintPage);
+            // 
+            // txtDesc
+            // 
+            this.txtDesc.Location = new System.Drawing.Point(19, 308);
+            this.txtDesc.Multiline = true;
+            this.txtDesc.Name = "txtDesc";
+            this.txtDesc.Size = new System.Drawing.Size(569, 219);
+            this.txtDesc.TabIndex = 19;
+            // 
+            // lblDesc
+            // 
+            this.lblDesc.AutoSize = true;
+            this.lblDesc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesc.Location = new System.Drawing.Point(15, 276);
+            this.lblDesc.Name = "lblDesc";
+            this.lblDesc.Size = new System.Drawing.Size(204, 19);
+            this.lblDesc.TabIndex = 18;
+            this.lblDesc.Text = "Descrição do Orçamento:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(626, 665);
+            this.Controls.Add(this.lblDesc);
+            this.Controls.Add(this.txtDesc);
             this.Controls.Add(this.imprimirButton);
             this.Controls.Add(this.lblData);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.lblCliente);
@@ -241,13 +251,14 @@ namespace Orçamento
         private System.Windows.Forms.Label lblCliente;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label lblData;
         private System.Windows.Forms.Button imprimirButton;
         private System.Drawing.Printing.PrintDocument printDocument;
+        private System.Windows.Forms.TextBox txtDesc;
+        private System.Windows.Forms.Label lblDesc;
     }
 }
 
