@@ -44,6 +44,8 @@ namespace Orçamento
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.lblData = new System.Windows.Forms.Label();
+            this.imprimirButton = new System.Windows.Forms.Button();
+            this.printDocument = new System.Drawing.Printing.PrintDocument();
             this.SuspendLayout();
             // 
             // TituloEmpresa
@@ -184,11 +186,27 @@ namespace Orçamento
             this.lblData.TabIndex = 15;
             this.lblData.Text = "Data Orçamento:";
             // 
+            // imprimirButton
+            // 
+            this.imprimirButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.imprimirButton.Location = new System.Drawing.Point(129, 626);
+            this.imprimirButton.Name = "imprimirButton";
+            this.imprimirButton.Size = new System.Drawing.Size(301, 27);
+            this.imprimirButton.TabIndex = 16;
+            this.imprimirButton.Text = "Imprimir";
+            this.imprimirButton.UseVisualStyleBackColor = true;
+            this.imprimirButton.Click += new System.EventHandler(this.imprimirButton_Click);
+            // 
+            // printDocument1
+            // 
+            this.printDocument.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument_PrintPage);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(626, 665);
+            this.Controls.Add(this.imprimirButton);
             this.Controls.Add(this.lblData);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -228,6 +246,8 @@ namespace Orçamento
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label lblData;
+        private System.Windows.Forms.Button imprimirButton;
+        private System.Drawing.Printing.PrintDocument printDocument;
     }
 }
 
