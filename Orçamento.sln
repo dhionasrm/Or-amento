@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orçamento", "Orçamento\Orçamento.csproj", "{A7EE8396-5F6A-4EAA-AE87-FB1CE960B278}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7EE8396-5F6A-4EAA-AE87-FB1CE960B278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7EE8396-5F6A-4EAA-AE87-FB1CE960B278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7EE8396-5F6A-4EAA-AE87-FB1CE960B278}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7EE8396-5F6A-4EAA-AE87-FB1CE960B278}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E25EC5BF-4B7C-428A-AD77-04E6E8F255DE}
+	EndGlobalSection
+EndGlobal
