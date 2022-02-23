@@ -60,7 +60,7 @@ namespace Orçamento
             /*var image = new Bitmap(this.Width, this.Height);
             var graphics = Graphics.FromImage(image);
             graphics.CopyFromScreen(this.Location.X, this.Location.Y, 0, 0, this.Size);
-            e.Graphics.DrawImage(image, 20, 20);*/
+            e.Graphics.DrawImage(image, 20, 20);*/   
         }
 
         
