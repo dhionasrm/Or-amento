@@ -40,13 +40,13 @@ namespace Orçamento
         {
             String Dados;
 
-            Dados = $"{TituloEmpresa.Text}\n\n\nORÇAMENTO\nEmpresa: Martelinho do Ouro\nCNPJ: XX.XXX.XXX/XXXX-XX\nData Orçamento:{dateTimePicker1.MaxDate}\nCliente: {textBox1.Text}\nPlaca: {textBox2.Text} Valor Orçado: {textBox3.Text}\nDescrição do Orçamento:\n{txtDesc.Text}\n_________________________________________\nAssinatura Aprovação Cliente";
+            Dados = $"{TituloEmpresa.Text}\n\nORÇAMENTO\n\nEmpresa: Martelinho do Ouro\n\nCNPJ: XX.XXX.XXX/XXXX-XX\n\nData Orçamento:{dateTimePicker1.MaxDate}\n\nCliente: {textBox1.Text}\n\nPlaca: {textBox2.Text} Valor Orçado: {textBox3.Text}\n\nDescrição do Orçamento:\n\n{txtDesc.Text}\n\n\n_________________________________________\n\nAssinatura Aprovação Cliente";
 
             var printDocument = sender as System.Drawing.Printing.PrintDocument;
 
             if (printDocument != null)
             {
-                using (var font = new Font("Times New Roman", 14))
+                using (var font = new Font("Arial", 14))
                 using (var brush = new SolidBrush(Color.Black))
                 
                 {
@@ -54,7 +54,7 @@ namespace Orçamento
                         Dados,
                 font,
                 brush,
-                new RectangleF(20, 20, printDocument.DefaultPageSettings.PrintableArea.Width, printDocument.DefaultPageSettings.PrintableArea.Height));
+                new RectangleF(50, 35, printDocument.DefaultPageSettings.PrintableArea.Width, printDocument.DefaultPageSettings.PrintableArea.Height));
                 }
             }
         }
