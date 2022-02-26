@@ -38,10 +38,11 @@ namespace Orçamento
 
         void printDocument_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            String Dados;
+            String Dados, Dados1, Dados2;
 
-            Dados = $"{TituloEmpresa.Text}\n\nORÇAMENTO\n\nEmpresa: Martelinho do Ouro\n\nCNPJ: XX.XXX.XXX/XXXX-XX\n\nData Orçamento:{dateTimePicker1.MaxDate}\n\nCliente: {textBox1.Text}\n\nPlaca: {textBox2.Text} Valor Orçado: {textBox3.Text}\n\nDescrição do Orçamento:\n\n{txtDesc.Text}\n\n\n_________________________________________\n\nAssinatura Aprovação Cliente";
-
+            Dados = $"\n\nEmpresa: Martelinho do Ouro\n\nCNPJ: XX.XXX.XXX/XXXX-XX\n\nData Orçamento:{dateTimePicker1.MaxDate}\n\nCliente: {textBox1.Text}\n\nPlaca: {textBox2.Text} Valor Orçado: {textBox3.Text}\n\nDescrição do Orçamento:\n\n{txtDesc.Text}\n\n\n____________________________________\n\nAssinatura Aprovação Cliente";
+            Dados1 = $"{TituloEmpresa.Text}";
+            Dados2 = $"\n\nORÇAMENTO";
             var printDocument = sender as System.Drawing.Printing.PrintDocument;
 
             if (printDocument != null)
@@ -54,7 +55,29 @@ namespace Orçamento
                         Dados,
                 font,
                 brush,
-                new RectangleF(50, 35, printDocument.DefaultPageSettings.PrintableArea.Width, printDocument.DefaultPageSettings.PrintableArea.Height));
+                new RectangleF(60, 300, printDocument.DefaultPageSettings.PrintableArea.Width, printDocument.DefaultPageSettings.PrintableArea.Height));
+                }
+
+                using (var font = new Font("Arial", 14))
+                using (var brush = new SolidBrush(Color.Black))
+
+                {
+                    e.Graphics.DrawString(
+                        Dados1,
+                font,
+                brush,
+                new RectangleF(270, 150, printDocument.DefaultPageSettings.PrintableArea.Width, printDocument.DefaultPageSettings.PrintableArea.Height));
+                }
+
+                using (var font = new Font("Arial", 14))
+                using (var brush = new SolidBrush(Color.Black))
+
+                {
+                    e.Graphics.DrawString(
+                        Dados2,
+                font,
+                brush,
+                new RectangleF(310, 180, printDocument.DefaultPageSettings.PrintableArea.Width, printDocument.DefaultPageSettings.PrintableArea.Height));
                 }
             }
         }
