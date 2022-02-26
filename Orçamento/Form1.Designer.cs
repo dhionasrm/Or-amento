@@ -47,6 +47,8 @@ namespace Orçamento
             this.printDocument = new System.Drawing.Printing.PrintDocument();
             this.txtDesc = new System.Windows.Forms.TextBox();
             this.lblDesc = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // TituloEmpresa
@@ -210,11 +212,21 @@ namespace Orçamento
             this.lblDesc.TabIndex = 18;
             this.lblDesc.Text = "Descrição do Orçamento:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Orçamento.Properties.Resources.LOGO_MARTELINHO_DE_OURO_300_x_60px;
+            this.pictureBox1.Location = new System.Drawing.Point(267, 107);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(301, 65);
+            this.pictureBox1.TabIndex = 20;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(626, 665);
+            this.ClientSize = new System.Drawing.Size(626, 711);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblDesc);
             this.Controls.Add(this.txtDesc);
             this.Controls.Add(this.imprimirButton);
@@ -234,6 +246,7 @@ namespace Orçamento
             this.Controls.Add(this.TituloEmpresa);
             this.Name = "Form1";
             this.Text = "Orçamento";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -259,6 +272,7 @@ namespace Orçamento
         private System.Drawing.Printing.PrintDocument printDocument;
         private System.Windows.Forms.TextBox txtDesc;
         private System.Windows.Forms.Label lblDesc;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

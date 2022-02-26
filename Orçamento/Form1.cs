@@ -38,11 +38,12 @@ namespace Orçamento
 
         void printDocument_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            String Dados, Dados1, Dados2;
+            String Dados, Dados1, Dados2, Dados3;
 
-            Dados = $"\n\nEmpresa: Martelinho do Ouro\n\nCNPJ: XX.XXX.XXX/XXXX-XX\n\nData Orçamento:{dateTimePicker1.MaxDate}\n\nCliente: {textBox1.Text}\n\nPlaca: {textBox2.Text} Valor Orçado: {textBox3.Text}\n\nDescrição do Orçamento:\n\n{txtDesc.Text}\n\n\n____________________________________\n\nAssinatura Aprovação Cliente";
-            Dados1 = $"{TituloEmpresa.Text}";
+            Dados = $"\n\nEmpresa: Martelinho do Ouro\n\nCNPJ: XX.XXX.XXX/XXXX-XX\n\nData Orçamento:{dateTimePicker1.MaxDate}\n\nCliente: {textBox1.Text}\n\nPlaca: {textBox2.Text} Valor Orçado: {textBox3.Text}\n\nDescrição do Orçamento:\n\n{txtDesc.Text}";
+            Dados1 = $"{pictureBox1.Image}\n{TituloEmpresa.Text}";
             Dados2 = $"\n\nORÇAMENTO";
+            Dados3 = $"\n\n\n____________________________________\n\nAssinatura Aprovação Cliente";
             var printDocument = sender as System.Drawing.Printing.PrintDocument;
 
             if (printDocument != null)
@@ -78,6 +79,17 @@ namespace Orçamento
                 font,
                 brush,
                 new RectangleF(310, 180, printDocument.DefaultPageSettings.PrintableArea.Width, printDocument.DefaultPageSettings.PrintableArea.Height));
+                }
+
+                using (var font = new Font("Arial", 14))
+                using (var brush = new SolidBrush(Color.Black))
+
+                {
+                    e.Graphics.DrawString(
+                        Dados3,
+                font,
+                brush,
+                new RectangleF(120, 700, printDocument.DefaultPageSettings.PrintableArea.Width, printDocument.DefaultPageSettings.PrintableArea.Height));
                 }
             }
         }
