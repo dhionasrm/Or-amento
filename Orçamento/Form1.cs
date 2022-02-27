@@ -38,12 +38,12 @@ namespace Orçamento
 
         void printDocument_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            String Dados, Dados1, Dados2, Dados3;
+            String DadosIMG, DadosEMP, DadosCLI, DadosSER;
 
-            Dados = $"\n\nEmpresa: Martelinho do Ouro\n\nCNPJ: XX.XXX.XXX/XXXX-XX\n\nData Orçamento:{dateTimePicker1.MaxDate}\n\nCliente: {textBox1.Text}\n\nPlaca: {textBox2.Text} Valor Orçado: {textBox3.Text}\n\nDescrição do Orçamento:\n\n{txtDesc.Text}";
-            Dados1 = $"{pictureBox1.Image}";
-            Dados2 = $"\n\nORÇAMENTO";
-            Dados3 = $"\n\n\n____________________________________\n\nAssinatura Aprovação Cliente";
+            DadosIMG = $"{pictureBox1.Image}";
+            DadosEMP = $"\n\n{lblEmpresa.Text} {lblCNPJ.Text}\n\n{lblEndereco.Text}";
+            DadosCLI = $"\n\n{lblDadosCliente.Text}\n\n{lblCliente.Text} {txtCliente.Text}\n\n{lblPlaca.Text} {txtPlaca.Text} {lblModelo.Text} {txtModelo.Text} {lblTelefone.Text} {txtTelefone.Text}\n\n{lblData.Text} {dateData.Value} {lblPrevisao.Text} {txtPrevisao.Text}";
+            DadosSER = $"\n\n{lblServico.Text}\n\n{lblDescricao.Text}\n\n{lblDescricao.Text}\n\n{lblValorPecas.Text} {txtValorPecas.Text}\n\n{lblValorServico.Text} {txtValorServico.Text}\n\n{lblValorDesconto.Text} {txtValorDesconto.Text}\n\n{lblValorTotal.Text} {txtValorTotal.Text}\n\n{lblParcelamento.Text}\n\n\n____________________________________\n\nAssinatura Aprovação Cliente";
             var printDocument = sender as System.Drawing.Printing.PrintDocument;
 
             if (printDocument != null)
@@ -53,43 +53,43 @@ namespace Orçamento
                 
                 {
                     e.Graphics.DrawString(
-                        Dados,
+                        DadosIMG,
                 font,
                 brush,
-                new RectangleF(60, 300, printDocument.DefaultPageSettings.PrintableArea.Width, printDocument.DefaultPageSettings.PrintableArea.Height));
+                new RectangleF(40, 100, printDocument.DefaultPageSettings.PrintableArea.Width, printDocument.DefaultPageSettings.PrintableArea.Height));
                 }
 
-                using (var font = new Font("Arial", 14))
+                using (var font = new Font("Arial", 12))
                 using (var brush = new SolidBrush(Color.Black))
 
                 {
                     e.Graphics.DrawString(
-                        Dados1,
+                        DadosEMP,
                 font,
                 brush,
-                new RectangleF(270, 150, printDocument.DefaultPageSettings.PrintableArea.Width, printDocument.DefaultPageSettings.PrintableArea.Height));
+                new RectangleF(40, 200, printDocument.DefaultPageSettings.PrintableArea.Width, printDocument.DefaultPageSettings.PrintableArea.Height));
                 }
 
-                using (var font = new Font("Arial", 14))
+                using (var font = new Font("Arial", 12))
                 using (var brush = new SolidBrush(Color.Black))
 
                 {
                     e.Graphics.DrawString(
-                        Dados2,
+                        DadosCLI,
                 font,
                 brush,
-                new RectangleF(310, 180, printDocument.DefaultPageSettings.PrintableArea.Width, printDocument.DefaultPageSettings.PrintableArea.Height));
+                new RectangleF(40, 350, printDocument.DefaultPageSettings.PrintableArea.Width, printDocument.DefaultPageSettings.PrintableArea.Height));
                 }
 
-                using (var font = new Font("Arial", 14))
+                using (var font = new Font("Arial", 12))
                 using (var brush = new SolidBrush(Color.Black))
 
                 {
                     e.Graphics.DrawString(
-                        Dados3,
+                        DadosSER,
                 font,
                 brush,
-                new RectangleF(120, 700, printDocument.DefaultPageSettings.PrintableArea.Width, printDocument.DefaultPageSettings.PrintableArea.Height));
+                new RectangleF(40, 500, printDocument.DefaultPageSettings.PrintableArea.Width, printDocument.DefaultPageSettings.PrintableArea.Height));
                 }
             }
         }

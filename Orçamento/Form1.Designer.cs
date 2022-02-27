@@ -30,37 +30,37 @@ namespace Orçamento
         private void InitializeComponent()
         {
             this.TituloOrcamento = new System.Windows.Forms.Label();
-            this.NomeEmpresa = new System.Windows.Forms.Label();
-            this.CNPJ_Empresa = new System.Windows.Forms.Label();
+            this.lblEmpresa = new System.Windows.Forms.Label();
+            this.lblCNPJ = new System.Windows.Forms.Label();
             this.lblPlaca = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.lblValor = new System.Windows.Forms.Label();
+            this.dateData = new System.Windows.Forms.DateTimePicker();
+            this.lblValorTotal = new System.Windows.Forms.Label();
             this.lblCliente = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtCliente = new System.Windows.Forms.TextBox();
+            this.txtPlaca = new System.Windows.Forms.TextBox();
+            this.txtValorTotal = new System.Windows.Forms.TextBox();
             this.lblData = new System.Windows.Forms.Label();
             this.imprimirButton = new System.Windows.Forms.Button();
             this.printDocument = new System.Drawing.Printing.PrintDocument();
-            this.txtDesc = new System.Windows.Forms.TextBox();
-            this.lblDesc = new System.Windows.Forms.Label();
+            this.txtDescricao = new System.Windows.Forms.TextBox();
+            this.lblDescricao = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblModelo = new System.Windows.Forms.Label();
+            this.lblPrevisao = new System.Windows.Forms.Label();
+            this.lblTelefone = new System.Windows.Forms.Label();
+            this.lblEndereco = new System.Windows.Forms.Label();
+            this.lblDadosCliente = new System.Windows.Forms.Label();
+            this.txtModelo = new System.Windows.Forms.TextBox();
+            this.txtTelefone = new System.Windows.Forms.TextBox();
+            this.txtPrevisao = new System.Windows.Forms.TextBox();
+            this.lblServico = new System.Windows.Forms.Label();
+            this.lblValorPecas = new System.Windows.Forms.Label();
+            this.lblValorServico = new System.Windows.Forms.Label();
+            this.lblValorDesconto = new System.Windows.Forms.Label();
+            this.txtValorPecas = new System.Windows.Forms.TextBox();
+            this.txtValorServico = new System.Windows.Forms.TextBox();
+            this.txtValorDesconto = new System.Windows.Forms.TextBox();
+            this.lblParcelamento = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,26 +74,26 @@ namespace Orçamento
             this.TituloOrcamento.TabIndex = 1;
             this.TituloOrcamento.Text = "ORDEM DE SERVIÇO";
             // 
-            // NomeEmpresa
+            // lblEmpresa
             // 
-            this.NomeEmpresa.AutoSize = true;
-            this.NomeEmpresa.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NomeEmpresa.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.NomeEmpresa.Location = new System.Drawing.Point(26, 100);
-            this.NomeEmpresa.Name = "NomeEmpresa";
-            this.NomeEmpresa.Size = new System.Drawing.Size(193, 20);
-            this.NomeEmpresa.TabIndex = 2;
-            this.NomeEmpresa.Text = "Empresa: Martelinho do Ouro";
+            this.lblEmpresa.AutoSize = true;
+            this.lblEmpresa.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmpresa.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblEmpresa.Location = new System.Drawing.Point(26, 100);
+            this.lblEmpresa.Name = "lblEmpresa";
+            this.lblEmpresa.Size = new System.Drawing.Size(193, 20);
+            this.lblEmpresa.TabIndex = 2;
+            this.lblEmpresa.Text = "Empresa: Martelinho do Ouro";
             // 
-            // CNPJ_Empresa
+            // lblCNPJ
             // 
-            this.CNPJ_Empresa.AutoSize = true;
-            this.CNPJ_Empresa.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CNPJ_Empresa.Location = new System.Drawing.Point(228, 100);
-            this.CNPJ_Empresa.Name = "CNPJ_Empresa";
-            this.CNPJ_Empresa.Size = new System.Drawing.Size(193, 20);
-            this.CNPJ_Empresa.TabIndex = 3;
-            this.CNPJ_Empresa.Text = "CNPJ: XX.XXX.XXX/XXXX-XX";
+            this.lblCNPJ.AutoSize = true;
+            this.lblCNPJ.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCNPJ.Location = new System.Drawing.Point(228, 100);
+            this.lblCNPJ.Name = "lblCNPJ";
+            this.lblCNPJ.Size = new System.Drawing.Size(193, 20);
+            this.lblCNPJ.TabIndex = 3;
+            this.lblCNPJ.Text = "CNPJ: XX.XXX.XXX/XXXX-XX";
             // 
             // lblPlaca
             // 
@@ -105,24 +105,24 @@ namespace Orçamento
             this.lblPlaca.TabIndex = 4;
             this.lblPlaca.Text = "Placa:";
             // 
-            // dateTimePicker1
+            // dateData
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(140, 230);
-            this.dateTimePicker1.MaxDate = new System.DateTime(2022, 2, 27, 0, 0, 0, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(213, 20);
-            this.dateTimePicker1.TabIndex = 6;
-            this.dateTimePicker1.Value = new System.DateTime(2022, 2, 27, 0, 0, 0, 0);
+            this.dateData.Location = new System.Drawing.Point(140, 230);
+            this.dateData.MaxDate = new System.DateTime(2022, 2, 27, 0, 0, 0, 0);
+            this.dateData.Name = "dateData";
+            this.dateData.Size = new System.Drawing.Size(213, 20);
+            this.dateData.TabIndex = 6;
+            this.dateData.Value = new System.DateTime(2022, 2, 27, 0, 0, 0, 0);
             // 
-            // lblValor
+            // lblValorTotal
             // 
-            this.lblValor.AutoSize = true;
-            this.lblValor.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValor.Location = new System.Drawing.Point(26, 625);
-            this.lblValor.Name = "lblValor";
-            this.lblValor.Size = new System.Drawing.Size(81, 20);
-            this.lblValor.TabIndex = 7;
-            this.lblValor.Text = "Valor Total:";
+            this.lblValorTotal.AutoSize = true;
+            this.lblValorTotal.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorTotal.Location = new System.Drawing.Point(26, 625);
+            this.lblValorTotal.Name = "lblValorTotal";
+            this.lblValorTotal.Size = new System.Drawing.Size(81, 20);
+            this.lblValorTotal.TabIndex = 7;
+            this.lblValorTotal.Text = "Valor Total:";
             // 
             // lblCliente
             // 
@@ -134,26 +134,26 @@ namespace Orçamento
             this.lblCliente.TabIndex = 8;
             this.lblCliente.Text = "Cliente:";
             // 
-            // textBox1
+            // txtCliente
             // 
-            this.textBox1.Location = new System.Drawing.Point(92, 180);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(550, 20);
-            this.textBox1.TabIndex = 12;
+            this.txtCliente.Location = new System.Drawing.Point(92, 180);
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.Size = new System.Drawing.Size(550, 20);
+            this.txtCliente.TabIndex = 12;
             // 
-            // textBox2
+            // txtPlaca
             // 
-            this.textBox2.Location = new System.Drawing.Point(75, 205);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(74, 20);
-            this.textBox2.TabIndex = 13;
+            this.txtPlaca.Location = new System.Drawing.Point(75, 205);
+            this.txtPlaca.Name = "txtPlaca";
+            this.txtPlaca.Size = new System.Drawing.Size(74, 20);
+            this.txtPlaca.TabIndex = 13;
             // 
-            // textBox3
+            // txtValorTotal
             // 
-            this.textBox3.Location = new System.Drawing.Point(157, 625);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(110, 20);
-            this.textBox3.TabIndex = 14;
+            this.txtValorTotal.Location = new System.Drawing.Point(157, 625);
+            this.txtValorTotal.Name = "txtValorTotal";
+            this.txtValorTotal.Size = new System.Drawing.Size(110, 20);
+            this.txtValorTotal.TabIndex = 14;
             // 
             // lblData
             // 
@@ -180,23 +180,23 @@ namespace Orçamento
             // 
             this.printDocument.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument_PrintPage);
             // 
-            // txtDesc
+            // txtDescricao
             // 
-            this.txtDesc.Location = new System.Drawing.Point(26, 322);
-            this.txtDesc.Multiline = true;
-            this.txtDesc.Name = "txtDesc";
-            this.txtDesc.Size = new System.Drawing.Size(616, 219);
-            this.txtDesc.TabIndex = 19;
+            this.txtDescricao.Location = new System.Drawing.Point(26, 322);
+            this.txtDescricao.Multiline = true;
+            this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.Size = new System.Drawing.Size(616, 219);
+            this.txtDescricao.TabIndex = 19;
             // 
-            // lblDesc
+            // lblDescricao
             // 
-            this.lblDesc.AutoSize = true;
-            this.lblDesc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDesc.Location = new System.Drawing.Point(26, 300);
-            this.lblDesc.Name = "lblDesc";
-            this.lblDesc.Size = new System.Drawing.Size(178, 19);
-            this.lblDesc.TabIndex = 18;
-            this.lblDesc.Text = "Descrição do Serviço:";
+            this.lblDescricao.AutoSize = true;
+            this.lblDescricao.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescricao.Location = new System.Drawing.Point(26, 300);
+            this.lblDescricao.Name = "lblDescricao";
+            this.lblDescricao.Size = new System.Drawing.Size(178, 19);
+            this.lblDescricao.TabIndex = 18;
+            this.lblDescricao.Text = "Descrição do Serviço:";
             // 
             // pictureBox1
             // 
@@ -207,185 +207,185 @@ namespace Orçamento
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
+            // lblModelo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(153, 205);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 20);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "Modelo:";
+            this.lblModelo.AutoSize = true;
+            this.lblModelo.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModelo.Location = new System.Drawing.Point(153, 205);
+            this.lblModelo.Name = "lblModelo";
+            this.lblModelo.Size = new System.Drawing.Size(59, 20);
+            this.lblModelo.TabIndex = 21;
+            this.lblModelo.Text = "Modelo:";
             // 
-            // label2
+            // lblPrevisao
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(359, 231);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 20);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Previsão:";
+            this.lblPrevisao.AutoSize = true;
+            this.lblPrevisao.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrevisao.Location = new System.Drawing.Point(359, 231);
+            this.lblPrevisao.Name = "lblPrevisao";
+            this.lblPrevisao.Size = new System.Drawing.Size(67, 20);
+            this.lblPrevisao.TabIndex = 22;
+            this.lblPrevisao.Text = "Previsão:";
             // 
-            // label3
+            // lblTelefone
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(427, 205);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 20);
-            this.label3.TabIndex = 23;
-            this.label3.Text = "Telefone:";
+            this.lblTelefone.AutoSize = true;
+            this.lblTelefone.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefone.Location = new System.Drawing.Point(427, 205);
+            this.lblTelefone.Name = "lblTelefone";
+            this.lblTelefone.Size = new System.Drawing.Size(66, 20);
+            this.lblTelefone.TabIndex = 23;
+            this.lblTelefone.Text = "Telefone:";
             // 
-            // label4
+            // lblEndereco
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(26, 125);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(612, 20);
-            this.label4.TabIndex = 24;
-            this.label4.Text = "Endereço: Avenida Assis Brasil, 5343, Loja 1, Sarandi, Porto Alegre - RS, Telefon" +
+            this.lblEndereco.AutoSize = true;
+            this.lblEndereco.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEndereco.Location = new System.Drawing.Point(26, 125);
+            this.lblEndereco.Name = "lblEndereco";
+            this.lblEndereco.Size = new System.Drawing.Size(612, 20);
+            this.lblEndereco.TabIndex = 24;
+            this.lblEndereco.Text = "Endereço: Avenida Assis Brasil, 5343, Loja 1, Sarandi, Porto Alegre - RS, Telefon" +
     "e: (51)985436688";
             // 
-            // label5
+            // lblDadosCliente
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(288, 155);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 20);
-            this.label5.TabIndex = 25;
-            this.label5.Text = "Dados Cliente";
+            this.lblDadosCliente.AutoSize = true;
+            this.lblDadosCliente.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDadosCliente.Location = new System.Drawing.Point(288, 155);
+            this.lblDadosCliente.Name = "lblDadosCliente";
+            this.lblDadosCliente.Size = new System.Drawing.Size(95, 20);
+            this.lblDadosCliente.TabIndex = 25;
+            this.lblDadosCliente.Text = "Dados Cliente";
             // 
-            // textBox4
+            // txtModelo
             // 
-            this.textBox4.Location = new System.Drawing.Point(218, 205);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(203, 20);
-            this.textBox4.TabIndex = 26;
+            this.txtModelo.Location = new System.Drawing.Point(218, 205);
+            this.txtModelo.Name = "txtModelo";
+            this.txtModelo.Size = new System.Drawing.Size(203, 20);
+            this.txtModelo.TabIndex = 26;
             // 
-            // textBox5
+            // txtTelefone
             // 
-            this.textBox5.Location = new System.Drawing.Point(491, 205);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(151, 20);
-            this.textBox5.TabIndex = 27;
+            this.txtTelefone.Location = new System.Drawing.Point(491, 205);
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(151, 20);
+            this.txtTelefone.TabIndex = 27;
             // 
-            // textBox6
+            // txtPrevisao
             // 
-            this.textBox6.Location = new System.Drawing.Point(431, 230);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(211, 20);
-            this.textBox6.TabIndex = 28;
+            this.txtPrevisao.Location = new System.Drawing.Point(431, 230);
+            this.txtPrevisao.Name = "txtPrevisao";
+            this.txtPrevisao.Size = new System.Drawing.Size(211, 20);
+            this.txtPrevisao.TabIndex = 28;
             // 
-            // label6
+            // lblServico
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(307, 260);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 20);
-            this.label6.TabIndex = 29;
-            this.label6.Text = "Serviço";
+            this.lblServico.AutoSize = true;
+            this.lblServico.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblServico.Location = new System.Drawing.Point(307, 260);
+            this.lblServico.Name = "lblServico";
+            this.lblServico.Size = new System.Drawing.Size(56, 20);
+            this.lblServico.TabIndex = 29;
+            this.lblServico.Text = "Serviço";
             // 
-            // label7
+            // lblValorPecas
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(26, 550);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(87, 20);
-            this.label7.TabIndex = 30;
-            this.label7.Text = "Valor Peças:\r\n";
+            this.lblValorPecas.AutoSize = true;
+            this.lblValorPecas.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorPecas.Location = new System.Drawing.Point(26, 550);
+            this.lblValorPecas.Name = "lblValorPecas";
+            this.lblValorPecas.Size = new System.Drawing.Size(87, 20);
+            this.lblValorPecas.TabIndex = 30;
+            this.lblValorPecas.Text = "Valor Peças:\r\n";
             // 
-            // label8
+            // lblValorServico
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(26, 575);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(97, 20);
-            this.label8.TabIndex = 31;
-            this.label8.Text = "Valor Serviço:";
+            this.lblValorServico.AutoSize = true;
+            this.lblValorServico.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorServico.Location = new System.Drawing.Point(26, 575);
+            this.lblValorServico.Name = "lblValorServico";
+            this.lblValorServico.Size = new System.Drawing.Size(97, 20);
+            this.lblValorServico.TabIndex = 31;
+            this.lblValorServico.Text = "Valor Serviço:";
             // 
-            // label11
+            // lblValorDesconto
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(26, 600);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(108, 20);
-            this.label11.TabIndex = 32;
-            this.label11.Text = "Valor Desconto:";
+            this.lblValorDesconto.AutoSize = true;
+            this.lblValorDesconto.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorDesconto.Location = new System.Drawing.Point(26, 600);
+            this.lblValorDesconto.Name = "lblValorDesconto";
+            this.lblValorDesconto.Size = new System.Drawing.Size(108, 20);
+            this.lblValorDesconto.TabIndex = 32;
+            this.lblValorDesconto.Text = "Valor Desconto:";
             // 
-            // textBox7
+            // txtValorPecas
             // 
-            this.textBox7.Location = new System.Drawing.Point(157, 550);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(110, 20);
-            this.textBox7.TabIndex = 33;
+            this.txtValorPecas.Location = new System.Drawing.Point(157, 550);
+            this.txtValorPecas.Name = "txtValorPecas";
+            this.txtValorPecas.Size = new System.Drawing.Size(110, 20);
+            this.txtValorPecas.TabIndex = 33;
             // 
-            // textBox8
+            // txtValorServico
             // 
-            this.textBox8.Location = new System.Drawing.Point(157, 575);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(110, 20);
-            this.textBox8.TabIndex = 34;
+            this.txtValorServico.Location = new System.Drawing.Point(157, 575);
+            this.txtValorServico.Name = "txtValorServico";
+            this.txtValorServico.Size = new System.Drawing.Size(110, 20);
+            this.txtValorServico.TabIndex = 34;
             // 
-            // textBox9
+            // txtValorDesconto
             // 
-            this.textBox9.Location = new System.Drawing.Point(157, 600);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(110, 20);
-            this.textBox9.TabIndex = 35;
+            this.txtValorDesconto.Location = new System.Drawing.Point(157, 600);
+            this.txtValorDesconto.Name = "txtValorDesconto";
+            this.txtValorDesconto.Size = new System.Drawing.Size(110, 20);
+            this.txtValorDesconto.TabIndex = 35;
             // 
-            // label9
+            // lblParcelamento
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(270, 662);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(368, 20);
-            this.label9.TabIndex = 36;
-            this.label9.Text = "PARCELAMENTO EM ATÉ 3X COM CARTÃO DE CRÉDITO";
+            this.lblParcelamento.AutoSize = true;
+            this.lblParcelamento.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblParcelamento.ForeColor = System.Drawing.Color.Red;
+            this.lblParcelamento.Location = new System.Drawing.Point(270, 662);
+            this.lblParcelamento.Name = "lblParcelamento";
+            this.lblParcelamento.Size = new System.Drawing.Size(368, 20);
+            this.lblParcelamento.TabIndex = 36;
+            this.lblParcelamento.Text = "PARCELAMENTO EM ATÉ 3X COM CARTÃO DE CRÉDITO";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(654, 749);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblParcelamento);
+            this.Controls.Add(this.txtValorDesconto);
+            this.Controls.Add(this.txtValorServico);
+            this.Controls.Add(this.txtValorPecas);
+            this.Controls.Add(this.lblValorDesconto);
+            this.Controls.Add(this.lblValorServico);
+            this.Controls.Add(this.lblValorPecas);
+            this.Controls.Add(this.lblServico);
+            this.Controls.Add(this.txtPrevisao);
+            this.Controls.Add(this.txtTelefone);
+            this.Controls.Add(this.txtModelo);
+            this.Controls.Add(this.lblDadosCliente);
+            this.Controls.Add(this.lblEndereco);
+            this.Controls.Add(this.lblTelefone);
+            this.Controls.Add(this.lblPrevisao);
+            this.Controls.Add(this.lblModelo);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.lblDesc);
-            this.Controls.Add(this.txtDesc);
+            this.Controls.Add(this.lblDescricao);
+            this.Controls.Add(this.txtDescricao);
             this.Controls.Add(this.imprimirButton);
             this.Controls.Add(this.lblData);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtValorTotal);
+            this.Controls.Add(this.txtPlaca);
+            this.Controls.Add(this.txtCliente);
             this.Controls.Add(this.lblCliente);
-            this.Controls.Add(this.lblValor);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.lblValorTotal);
+            this.Controls.Add(this.dateData);
             this.Controls.Add(this.lblPlaca);
-            this.Controls.Add(this.CNPJ_Empresa);
-            this.Controls.Add(this.NomeEmpresa);
+            this.Controls.Add(this.lblCNPJ);
+            this.Controls.Add(this.lblEmpresa);
             this.Controls.Add(this.TituloOrcamento);
             this.Name = "Form1";
             this.Text = "Orçamento";
@@ -397,37 +397,37 @@ namespace Orçamento
 
         #endregion
         private System.Windows.Forms.Label TituloOrcamento;
-        private System.Windows.Forms.Label NomeEmpresa;
-        private System.Windows.Forms.Label CNPJ_Empresa;
+        private System.Windows.Forms.Label lblEmpresa;
+        private System.Windows.Forms.Label lblCNPJ;
         private System.Windows.Forms.Label lblPlaca;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label lblValor;
+        private System.Windows.Forms.DateTimePicker dateData;
+        private System.Windows.Forms.Label lblValorTotal;
         private System.Windows.Forms.Label lblCliente;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtCliente;
+        private System.Windows.Forms.TextBox txtPlaca;
+        private System.Windows.Forms.TextBox txtValorTotal;
         private System.Windows.Forms.Label lblData;
         private System.Windows.Forms.Button imprimirButton;
         private System.Drawing.Printing.PrintDocument printDocument;
-        private System.Windows.Forms.TextBox txtDesc;
-        private System.Windows.Forms.Label lblDesc;
+        private System.Windows.Forms.TextBox txtDescricao;
+        private System.Windows.Forms.Label lblDescricao;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblModelo;
+        private System.Windows.Forms.Label lblPrevisao;
+        private System.Windows.Forms.Label lblTelefone;
+        private System.Windows.Forms.Label lblEndereco;
+        private System.Windows.Forms.Label lblDadosCliente;
+        private System.Windows.Forms.TextBox txtModelo;
+        private System.Windows.Forms.TextBox txtTelefone;
+        private System.Windows.Forms.TextBox txtPrevisao;
+        private System.Windows.Forms.Label lblServico;
+        private System.Windows.Forms.Label lblValorPecas;
+        private System.Windows.Forms.Label lblValorServico;
+        private System.Windows.Forms.Label lblValorDesconto;
+        private System.Windows.Forms.TextBox txtValorPecas;
+        private System.Windows.Forms.TextBox txtValorServico;
+        private System.Windows.Forms.TextBox txtValorDesconto;
+        private System.Windows.Forms.Label lblParcelamento;
     }
 }
 
