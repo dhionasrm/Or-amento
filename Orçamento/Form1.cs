@@ -41,7 +41,7 @@ namespace Orçamento
             String Dados, Dados1, Dados2, Dados3;
 
             Dados = $"\n\nEmpresa: Martelinho do Ouro\n\nCNPJ: XX.XXX.XXX/XXXX-XX\n\nData Orçamento:{dateTimePicker1.MaxDate}\n\nCliente: {textBox1.Text}\n\nPlaca: {textBox2.Text} Valor Orçado: {textBox3.Text}\n\nDescrição do Orçamento:\n\n{txtDesc.Text}";
-            Dados1 = $"{pictureBox1.Image}\n{TituloEmpresa.Text}";
+            Dados1 = $"{pictureBox1.Image}";
             Dados2 = $"\n\nORÇAMENTO";
             Dados3 = $"\n\n\n____________________________________\n\nAssinatura Aprovação Cliente";
             var printDocument = sender as System.Drawing.Printing.PrintDocument;
